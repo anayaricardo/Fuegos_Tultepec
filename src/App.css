@@ -51,8 +51,11 @@
     #ce1126 66%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px black;
+  animation: wobble 2.8s ease-in-out infinite;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .rotulo-main {
@@ -60,6 +63,8 @@
   color: #ffdd2d; /* Amarillo brillante */
   -webkit-text-stroke: 1.5px #d62828; /* Borde rojo oscuro */
   paint-order: stroke fill;
+  animation: wobble 2.5s ease-in-out infinite;
+  text-shadow: 3px 3px 0px #a31e1e, 6px 6px 0px #7a1616;
 }
 
 /* --- Animación y efecto 3D para Rótulos --- */
@@ -75,14 +80,4 @@
   75% {
     transform: rotate(1.5deg) translate(2px, -1px);
   }
-}
-
-.rotulo-main {
-  animation: wobble 2.5s ease-in-out infinite;
-  text-shadow: 3px 3px 0px #a31e1e, 6px 6px 0px #7a1616;
-}
-
-.mexico-colors {
-  animation: wobble 2.8s ease-in-out infinite;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
